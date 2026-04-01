@@ -1,0 +1,118 @@
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px;
+}
+
+button{
+    border: 1px;
+    border-radius: 20px;
+
+    background-color: rgb(215, 227, 237);
+    transition: background 0.3s ease;
+}
+button:hover{
+    background-color: rgb(188, 194, 221);
+    cursor: pointer;
+
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    color: black
+}
+
+.section-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    font-size: 1.2em;
+    
+    position: sticky;
+    background-color: rgb(215, 227, 237);
+
+    padding: 8px 20px;
+    height: 50px;
+    width: 100%;
+    
+
+    box-sizing: border-box;
+}   
+#left-bar, #middle-bar, #right-bar{
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    gap: 20px;
+}
+
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+.home img{
+    width: auto;
+    height: 36em;
+}
+.home button{
+    padding: 10px 20px;
+}
+
+
+#products-section{
+    background-color: rgb(245, 241, 248);
+}
+.header-products{
+    padding: 0px 2em;
+    font-size: 1.2em;
+}
+.body-products{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px;
+
+    padding: 0px 2em;
+}
+.body-products img{
+    width: auto;
+    height: 19em;
+    border-radius: 10px;
+
+    animation: floatImg 2s infinite alternate;
+}.imgOdd{
+    animation: floatImg 2s infinite alternate-reverse;
+}
+.body-products p{
+    font-size: 1.2em;
+}
+
+.bot{
+    display: flex;
+    justify-content: end;
+
+    padding: 0px 3em;
+
+    position: fixed;
+    bottom: 1.5em;
+    right: 0.5em;
+}
+
+@keyframes floatImg{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 800px) {
+    .body-products {
+        grid-template-columns: 1fr 1fr;
+    }
+    .home img {
+        height: 20em; 
+    }
+}
