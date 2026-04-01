@@ -52,7 +52,7 @@ Como o projeto é feito com tecnologias nativas do navegador (Vanilla), não é 
 Clone este repositório:
 
 Bash
-git clone [https://github.com/SEU_USUARIO/jocks-store-showcase.git](https://github.com/SEU_USUARIO/jocks-store-showcase.git)
+git clone [https://github.com/johnabyner/jocks-store-showcase.git](https://github.com/johnabyner/jocks-store-showcase.git)
 Abra a pasta do projeto.
 
 Dê um duplo clique no arquivo index.html para abri-lo diretamente no seu navegador, ou utilize a extensão Live Server do VS Code para uma melhor experiência.
